@@ -8,7 +8,10 @@
 from random import randint
 
 number = int(input('Введите размер последовательности чисел: '))
-arr = [randint(0,number*2) for i in range(0,number)]
-res = [i for i in arr if arr.count(i) == 1]
-print(arr)
-print(res)
+def OnlyUnical (num):
+    if num <= 0:
+        print('Negative value of the number of numbers!')
+    arr = [randint(0,num*2) for i in range(0,num)]
+    res = [i for i in arr if arr.count(i) == 1]
+    return arr , res
+print(OnlyUnical(number))
