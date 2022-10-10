@@ -14,6 +14,6 @@ def SimpleMultiplys (num):
             num=num/i
         i+=1
     if (num>1):
-        arr.append(num)
+        arr.append(int(num))
     return arr
 print(SimpleMultiplys(number))
